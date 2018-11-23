@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Memory Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <div class = 'container'>
+            <header>
+                <h1>Memories</h1>
+            </header>
+            <section class = 'score-panel'>
+                <span class = 'moves'>0</span>
+                 move(s)
+                 <div class = 'timer'>0 mins 0 secs</div>
+                 <div class = 'restart-game' onclick = 'startGame()'> ↺ </div>
+            </section>
+            <ul id = 'card-deck' class = 'deck'>
+                <li class = 'card' type = 'bandit'><img src= "img/bandit.svg" alt = 'bandit'></li>
+                <li class = 'card' type = 'wizard'><img src ="img/wizard-face.svg" alt = 'wizard'></li>
+                <li class = 'card' type = 'vampire'><img src ="img/female-vampire.svg" alt = 'vampire'></li>
+                <li class = 'card' type = 'dragon'><img src ="img/spiked-dragon-head.svg" alt = 'dragon'></li>
+                <li class = 'card' type = "cyborg"><img src = 'img/cyborg-face.svg' alt = 'cyborg'></li>
+                <li class = 'card' type = 'bandit'><img src= "img/bandit.svg" alt = 'bandit'></li>
+                <li class = 'card' type = 'harpy'><img src = 'img/harpy.svg' alt = 'harpy'></li>
+                <li class = 'card' type = 'dwarf'><img src = 'img/dwarf-face.svg' alt = 'dwarf'></li>
+                <li class = 'card' type = 'demon'><img src = 'img/sharp-smile.svg' alt = 'demon'></li>
+                <li class = 'card' type = 'wizard'><img src ="img/wizard-face.svg" alt = 'wizard'></li>
+                <li class = 'card' type = 'harpy'><img src = 'img/harpy.svg' alt = 'harpy'></li>
+                <li class = 'card' type = 'dwarf'><img src = 'img/dwarf-face.svg' alt = 'dwarf'></li>
+                <li class = 'card' type = 'dragon'><img src ="img/spiked-dragon-head.svg" alt = 'dragon'></li>
+                <li class = 'card' type = "cyborg"><img src = 'img/cyborg-face.svg' alt = 'cyborg'></li>
+                <li class = 'card' type = 'demon'><img src = 'img/sharp-smile.svg' alt = 'demon'></li>
+                <li class = 'card' type = 'vampire'><img src ="img/female-vampire.svg" alt = 'vampire'></li>
+            </ul>
+            <div id = 'popup1' class = 'overlay'>
+                <div class = 'popup'>
+                <h2>Congratulations!</h2>
+                <a class = 'close' href="#">X</a>
+                <div class = 'content1'>You are a winner!</div>
+                <div class = 'content2'>
+                    <p>You took 
+                        <span id = 'finalMove'></span>
+                         moves
+                    </p>
+                    <p>in <span id = 'totalTime'></span></p>
+                </div>
+                <button id = 'play-again' onclick = 'playAgain()'>Play again?</button>
+            </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
